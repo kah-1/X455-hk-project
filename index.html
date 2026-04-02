@@ -202,54 +202,12 @@
                         myIndex = n;
                     }
 
-                    function showDivs(n) {
-                        var i;
-                        var x = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("demo");
-                        if (n > x.length) {
-                            slideIndex = 1;
-                        }
-                        if (n < 1) {
-                            slideIndex = x.length;
-                        }
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-                        }
-                        x[slideIndex - 1].style.display = "block";
-                        dots[slideIndex - 1].className += " w3-opacity-off";
-                    }
-
-                    $(document).ready(function () {
-                            $("table#myTable").tablesorter({
-                                sortList: [
-                                    [2, 1],
-                                ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
-                                CssAsc: "tablesorter-headerAsc",
-                                CssDesc: "tablesorter-headerDesc",
-                            });
-                        });
-
-                        function myAccordion(id) {
-                                var x = document.getElementById(id);
-                                // if the accordion text is hidden, show it and change the button color to orange
-                                if (x.className.indexOf("w3-show") == -1) {
-                                    x.className += " w3-show";
-                                } else {
-                                    // if the accordion text is displayed, hide it and change the button color to brown
-                                    x.className = x.className.replace(" w3-show", "");
-                                    x.previousElementSibling.className =
-                                        x.previousElementSibling.className.replace("w3-orange", "w3-brown");
-                                }
-                            }
             </script>
 
         </header>
 
         <!-- Homepage Image -->
-        <img class="w3-image" src="images/homepage.jpg" alt="Flowers" style="width: 1400px; height: 885px; margin-top: 48px;">
+        <img class="w3-image" src="./images/homepage.jpg" alt="Flowers" style="width: 1400px; height: 885px; margin-top: 48px;">
         <div class="w3-display-middle w3-center"></div>
 
         <!-- About Us -->
@@ -569,6 +527,49 @@
                 <br>&copy; Tangerine Farm Flowers</p>
         </div>
     </footer>
+
+    <script>
+        function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = x.length;
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-opacity-off";
+            }
+
+            $(document).ready(function () {
+                $("table#myTable").tablesorter({
+                    sortList: [
+                        [2, 1],
+                    ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+                    CssAsc: "tablesorter-headerAsc",
+                    CssDesc: "tablesorter-headerDesc",
+                });
+            });
+
+            function myAccordion(id) {
+                var x = document.getElementById(id);
+                // if the accordion text is hidden, show it and change the button color to orange
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    // if the accordion text is displayed, hide it and change the button color to brown
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+    </script>
 
 </body>
 
