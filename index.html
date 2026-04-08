@@ -14,9 +14,11 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu,search,shopping_bag"/>
     
+    
     <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/JavaScript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+
 
     <style>
         body {
@@ -96,10 +98,9 @@
 
         table {
             border-collapse: collapse;
-            width: 120%;
+            width: 100%;
             border: 1px solid;
             position: relative;
-            margin-left: -9%;
         }
     
         td {
@@ -134,7 +135,6 @@
 
     <!-- !PAGE CONTENT! -->
     <div style="max-width:1500px; margin-left: auto; margin-right: auto;">
-        <!-- add w3-content class if needed -->
 
         <!-- Header -->
         <header class="w3-container w3-xlarge w3-top w3-light-yellow inconsolata-font" style="max-width: 1500px; padding-top: 12px;">
@@ -156,7 +156,6 @@
             <a href="javascript:void(0)" class="menu-font w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
                 <i class="fa fa-bars"></i>
                 </a>
-        
             
             <nav class="my-w3-sidebar w3-bar-block w3-light-yellow w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display: none;"
                 id="mySidebar">
@@ -179,22 +178,6 @@
             </nav>
 
             <script>
-                // Toggle between showing and hiding the sidebar when clicking the menu icon
-                var mySidebar = document.getElementById("mySidebar");
-
-                function w3_open() {
-                    if (mySidebar.style.display === "block") {
-                        mySidebar.style.display = "none";
-                    } else {
-                        mySidebar.style.display = "block";
-                    }
-                }
-
-                // Close the sidebar with the close button
-                function w3_close() {
-                    mySidebar.style.display = "none";
-                }
-
                 // slideshow - carousel
                     // hook each carousel button
                     function currentDiv(n) {
@@ -207,7 +190,7 @@
         </header>
 
         <!-- Homepage Image -->
-        <img class="w3-image" src="./images/homepage.jpg" alt="Flowers" style="width: 1400px; height: 885px; margin-top: 48px;">
+        <img class="w3-image" src="./images/homepage.jpg" alt="Flowers" style="width: 1400px; margin-top: 48px;">
         <div class="w3-display-middle w3-center"></div>
 
         <!-- About Us -->
@@ -215,7 +198,7 @@
         <form style="margin:auto;width:60%">
             <div class="w3-padding-large">
             <p class="inter-font"><img src="images/about-us-image-1.jpg" class="my-float-left my-img-size-1"
-                alt="bouquet of various flowers" style="width: 250px; height: 230px; padding-top: 7px;" />
+                alt="bouquet of various flowers" style="width: 250px; height: 250px; padding-top: 7px; padding-bottom: 7px;" />
                 Founded in 2022, Tangerine Farm Flowers is floral design studio based in California's Bay Area. Known for
                 its merging of an organic aesthetic with dark florals and imagery, the studio's work uses local materials and champions
                 lesser known varieties and heritage breeds.
@@ -243,15 +226,12 @@
                 at the Ferry Building and Ferry Building Farmers Market, horticultural fellows, and community gardeners. We also draw inspiration from friends across the country.
             </p>
             <p class="inter-font">
-                When you book an appointment with us, you may be met by Hannah, our founder; Susan, our COO; Rose, our Sustainability Expert; Cat, our on-site floral arranger;
-                and Bria, our off-site floral arranger. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus imperdiet turpis, nec dignissim dui malesuada sit
-                amet. Sed ultrices ante non sapien volutpat eleifend. Mauris vel nibh at tortor facilisis blandit ac id massa. Ut
-                lacinia eros non dui fermentum, id pellentesque elit pretium. Vestibulum dictum dui tortor. Maecenas vitae justo
-                tristique orci dignissim tempor ultrices vel urna. Donec accumsan sollicitudin magna sed venenatis. Fusce rhoncus purus
-                ut ex sodales, sed aliquet magna corna est tincidunt. Maecenas pharetra commodo tellus, non rhoncus urna molestie ut.
-                Nulla facilisi. Vestibulum consequat libero eu orci commodo, ut dapibus ipsum ullamcorper. Duis auctor leo mi. Morbi
-                tortor sem, ornare a blandit in, elementum sit amet diam. Vestibulum consequat libero eu orci commodo, ut dapibus ipsum
-                ullamcorper. Duis auctor leo mi. Morbi tortor sem, ornare a blandit in, elementum sit amet diam.
+                When you book an appointment with us, you may be met by Anna, our founder; Susan, our COO; Rose, our Sustainability Expert; Cat, our on-site floral arranger;
+                and Bria, our off-site floral arranger. The entire team is instrumental to the design and brand ethos of Tangerine Farm Flowers, and we're lucky that all five of us
+                have been a part of TFF since the early concept phase. With shared backgrounds in visual design, horticulture, and local flora, the team is empowered
+                to bring to life your vision without negatively impacting our local and global environments. We constantly push each other to bring forth our best ideas for our
+                clients and the Bay Area community. To ensure this sustainability, we are constantly working with the UC Berkeley's Botanical Garden to offer classes and large-scale project
+                assistance.
                 <br><br><span>
                     <a class="footer-link" style="text-decoration: underline;">
                         Get to know our partners at the Berkeley Botanical Garden. </a>
@@ -264,39 +244,54 @@
         <!-- Services -->
         <h2 class="w3-padding-64 w3-center inconsolata-font" id="services">Services</h2>
             <div>       
-                <img class="mySlides center" src="images/services-image-1.jpg" style="width: 600px; height: 400px;" />
-                <img class="mySlides" src="images/services-image-2.jpg" style="width: 600px; height: 400px; display: none" />
-                <img class="mySlides" src="images/services-image-3.jpg" style="width: 600px; height: 400px; display: none" />
-                <img class="mySlides" src="images/services-image-4.jpg" style="width: 600px; height: 400px; display: none" />
+                <img class="mySlides center" src="images/services-image-1.jpg" style="width: 600px;" />
+                <img class="mySlides" src="images/services-image-2.jpg" style="width: 600px; display: none" />
+                <img class="mySlides" src="images/services-image-3.jpg" style="width: 600px; display: none" />
+                <img class="mySlides" src="images/services-image-4.jpg" style="width: 600px; display: none" />
             </div>
 
             <div class="w3-col s3" style="padding-left: 30px;">
                 <img class="demo w3-opacity w3-hover-opacity-off" src="images/services-image-1.jpg"
-                    style="width: 150px; height: 100px; cursor: pointer; margin-top: 32px; margin-bottom: 64px;" onclick="currentDiv(1)" />
+                    style="width: 80%; cursor: pointer; margin-top: 32px; margin-bottom: 64px;" onclick="currentDiv(1)" />
             </div>
             <div class="w3-col s3" style="padding-left: 30px;">
                 <img class="demo w3-opacity w3-hover-opacity-off" src="images/services-image-2.jpg"
-                    style="width: 150px; height: 100px; cursor: pointer; margin-top: 32px; margin-bottom: 64px;" onclick="currentDiv(2)" />
+                    style="width: 80%; cursor: pointer; margin-top: 32px; margin-bottom: 64px;" onclick="currentDiv(2)" />
             </div>
             <div class="w3-col s3" style="padding-left: 30px;">
                 <img class="demo w3-opacity w3-hover-opacity-off" src="images/services-image-3.jpg"
-                    style="width: 150px; height: 100px; cursor: pointer; margin-top: 32px; margin-bottom: 64px;" onclick="currentDiv(3)" />
+                    style="width: 80%; max-height: 100px; cursor: pointer; margin-top: 32px; margin-bottom: 64px;" onclick="currentDiv(3)" />
             </div>
             <div class="w3-col s3" style="padding-left: 30px;">
                 <img class="demo w3-opacity w3-hover-opacity-off" src="images/services-image-4.jpg"
-                    style="width: 150px; height: 100px; cursor: pointer; margin-top: 32px; margin-bottom: 64px;" onclick="currentDiv(4)" />
+                    style="width: 80%; cursor: pointer; margin-top: 32px; margin-bottom: 64px;" onclick="currentDiv(4)" />
             </div>
 
             <div class="w3-row">
             <!-- step 2: add a <div> tag with w3-col s4 classes-->
-            <div class="s4 w3-padding center" style="width: 40%;">
-                <div class="my-scrolling inter-font" style="padding-right: 10px; border: 1px solid #dddddd; padding: 7px;">
+            <div class="s4 w3-padding center" style="width: 80%">
+                <div class="my-scrolling inter-font" style="padding-right: 10px; border: 1px solid #dddddd; padding: 0px 7px;">
                     <p>
-                        Nulla pretium ultrices augue eu faucibus. Maecenas non iaculis neque, id accumsan leo. Proin sollicitudin suscipit neque
-                        a maximus. Duis ac ipsum lorem. Curabitur faucibus et leo sed consectetur. Sed volutpat, enim a facilisis auctor, ante
-                        odio cursus augue, nec eleifend augue ante et eros. Sed in libero sit amet mi dignissim condimentum. Fusce fermentum,
-                        dui gravida porttitor lobortis, mauris lorem congue nisl, vel porta quam elit at erat. Etiam augue tellus, maximus ut
-                        augue at, dignissim volutpat lacus. Nunc eu urna id urna gravida auctor.
+                        We offer multiple types of arrangements that meet a variety of needs.
+                        <br><br>We have three main arrangements:
+                        <ul>
+                            <li>Signature Flower Arrangement</li>
+                            <li>Large FLower Arrangement</li>
+                            <li>Small FLower Arrangement</li>
+                        </ul>
+                        For arrangements in vases, we offer:
+                        <ul>
+                            <li>Bud Vase Duo</li>
+                            <li>Dinner Party Vase Bundle</li>
+                        </ul>
+                        For clients looking for hand-held bouquets, we have:
+                        <ul>
+                            <li>Original Flower Bouquet</li>
+                            <li>City Hall Special</li>
+                            <li>Get Well Bouquet</li>
+                        </ul>
+                        We also offer subscriptions (monthly or weekly) and bespoke event packages. 
+                        <br><br>Please do not hesitate to email us for any of these services.
                     </p>
                 </div>
             </div>
@@ -307,14 +302,18 @@
             topic and ensure that you leave having learned something new. The cost of each course covers necessary tools and
             flowers. You will leave with these course materials. We look forward to seeing you!
         </p>
+
+        <div style="overflow-x: auto;">
         <table id="myTable" class="inter-font">
-            <tbody>
+            <thead>
                 <tr class="inter-font-heading">
                         <th>Class</th>
                         <th>Skill level</th>
                         <th>Class length</th>
                         <th>Price</th>
                 </tr>
+            </thead>
+            <tbody>
                  <tr>
                         <td>Intro to Flowers</td>
                         <td>Beginner</td>
@@ -347,68 +346,62 @@
                 </tr>
                 </tbody>
             </table>
+            </div>
      
         <!-- Our Process -->
         <h2 class="w3-padding-64 w3-center inconsolata-font" id="our-process">Our process</h2>
-        <div class="w3-row-padding w3-center" style="width: 1100px; margin-left: -100px;">
-            <div class="w3-col s4">
+        <div class="w3-row" style="width: 105%;">
+            <div class="w3-col m4" style="padding-right: 40px;">
                 <iframe height="300" src="https://www.youtube.com/embed/VIrXY3c2-t4?si=Y7svqx0EoMsKVCo8" title="Design Elements"
                             frameborder="0" allow="autoplay;">
                 </iframe>
             </div>
                   
-            <div class="w3-col m4 w3-center">
+            <div class="w3-col m4">
                 <iframe height="300" src="https://www.youtube.com/embed/7qc6KfR8Qw4?si=B_jOJsETKDw2VEOp" title="Bouquet 101"
                             frameborder="0" allow="autoplay;">
                 </iframe>
             </div>
 
-            <div class="w3-col m4 w3-center">
+            <div class="w3-col m4">
                 <iframe height="300" src="https://www.youtube.com/embed/8zTpL8nYw7Y?si=6c3wMVKyZgBh9xNq" title="French Bouquets"
                             frameborder="0" allow="autoplay;">
                 </iframe>
             </div>
         </div>
 
-        <div class="w3-row" style="padding-top: 60px;">
-            <div class="w3-col s6 w3-left" style="padding-right: 3px">
+        <div class="w3-row" style="padding-top: 60px; padding-left: 4%;">
+            <div class="w3-col s3 w3-left;" style="width: 50%; padding-right: 2%;">
                 <button onclick="myAccordion('accordion1')" class="w3-button w3-block w3-center-align"
-                    id="accordionBtn1" style="border: 1px solid #dddddd; padding: 7px; width: 400px;">
+                    id="accordionBtn1" style="border: 1px solid #dddddd; padding: 7px;">
                     <p class="inter-font">Our ethos <i class="fa fa-caret-down"></i></p>
                 </button>
-                <div id="accordion1" class="w3-hide w3-container" style="width: 400px; border: 1px solid #dddddd; padding: 7px;">
+                <div id="accordion1" class="w3-hide w3-container" style="border: 1px solid #dddddd; padding: 0px 7px;">
                     <p class="inter-font">
-                        When you book an appointment with us, you may be met by Hannah, our founder; Susan, our COO; Rose, our Sustainability
-                        Expert; Cat, our on-site floral arranger;
-                        and Bria, our off-site floral arranger. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus imperdiet
-                        turpis, nec dignissim dui malesuada sit
-                        amet. Sed ultrices ante non sapien volutpat eleifend. Mauris vel nibh at tortor facilisis blandit ac id massa. Ut
-                        lacinia eros non dui fermentum, id pellentesque elit pretium. Vestibulum dictum dui tortor. Maecenas vitae justo
-                        tristique orci dignissim tempor ultrices vel urna. Donec accumsan sollicitudin magna sed venenatis. Fusce rhoncus purus
-                        ut ex sodales, sed aliquet magna corna est tincidunt. Maecenas pharetra commodo tellus, non rhoncus urna molestie ut.
-                        Nulla facilisi. Vestibulum consequat libero eu orci commodo, ut dapibus ipsum ullamcorper. Duis auctor leo mi. Morbi
-                        tortor sem, ornare a blandit in, elementum sit amet diam. Vestibulum consequat libero eu orci commodo, ut dapibus ipsum
-                        ullamcorper. Duis auctor leo mi. Morbi tortor sem, ornare a blandit in, elementum sit amet diam.
-                        <br><br><span>
+                        When you book an appointment with us, you may be met by Anna, our founder; Susan, our COO; Rose, our Sustainability
+                        Expert; Cat, our on-site floral arranger; and Bria, our off-site floral arranger. We'll be there for you every step of the way,
+                        whether you're looking for a one-time arrangement or assistance on a wide-scale project. Our main goal is that we marry your vision
+                        with sustainable practices that ensures the longevity of the land on which we grow our flowers and plants. We also strive to curate with
+                        California native plants.
                     </p>
                 </div>
             </div>
-            <div class="w3-col s6 w3-left" style="padding-left: 3px">
-                <button onclick="myAccordion('accordion2')" class="w3-button w3-block w3-center-align"
-                    id="accordionBtn2" style="border: 1px solid #dddddd; padding: 7px; width: 400px;">
+            <div class="w3-col s3 w3-left;" style="width: 50%;">
+                <button onclick="myAccordion('accordion2')" class="w3-button w3-block w3-center-align" id="accordionBtn1"
+                    style="border: 1px solid #dddddd; padding: 7px;">
                     <p class="inter-font">Our sources <i class="fa fa-caret-down"></i></p>
                 </button>
-                <div id="accordion2" class="w3-hide w3-container" style="width: 400px; border: 1px solid #dddddd; padding: 7px;">
+                <div id="accordion2" class="w3-hide w3-container" style="border: 1px solid #dddddd; padding: 0px 7px;">
                     <p class="inter-font">
-                        Simple fleshy fruits from apples to berries to watermelon;
-                        simple dry fruits including beans and rice, coconuts and
-                        carrots; aggregate fruits including strawberries, raspberries,
-                        blackberries, pawpaw.
+                        We strive to source from farmers within California who, one, grow native plants, two, operate ethically, and three,
+                        operate sustainably. We also only use
+                        packaging and materials from businesses whose ideals align with ours. To get a list of potential sources that we would
+                        use for your specific project,
+                        please do not hesitate to email us. We're more than happy to talk about our partners and business goals!
                     </p>
                 </div>
             </div>
         </div>
-        <!-- add accordion end -->
             
 
         <!-- Past Works -->
@@ -416,30 +409,30 @@
 
         <div class="w3-row-padding" style="margin: 20px 0px;">
             <div class="w3-col s4">
-                <img src="images/image-1.jpg" style="height: 360px; width: 275px; cursor: zoom-in"
+                <img src="images/image-1.jpg" style="width: 95%; cursor: zoom-in"
                     onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-shadow">
             </div>
             <div class="w3-col s4">
-                <img src="images/image-2.jpg" style="height: 360px; width: 275px; cursor: zoom-in"
+                <img src="images/image-2.jpg" style="width: 95%; cursor: zoom-in"
                     onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-shadow">
             </div>
             <div class="w3-col s4">
-                <img src="images/image-3.jpg" style="height: 360px; width: 275px; cursor: zoom-in"
+                <img src="images/image-3.jpg" style="width: 95%; cursor: zoom-in"
                     onclick="document.getElementById('modal03').style.display='block'" class="w3-hover-shadow">
             </div>
         </div>
 
         <div class="w3-row-padding" style="margin: 20px 0px">
             <div class="w3-col s4">
-                <img src="images/image-4.jpg" style="height: 360px; width: 275px; cursor: zoom-in"
+                <img src="images/image-4.jpg" style="width: 95%; max-height: 355px; cursor: zoom-in"
                     onclick="document.getElementById('modal04').style.display='block'" class="w3-hover-shadow">
             </div>
             <div class="w3-col s4">
-                <img src="images/image-5.jpg" style="height: 360px; width: 275px; cursor: zoom-in"
+                <img src="images/image-5.jpg" style="width: 95%; cursor: zoom-in"
                     onclick="document.getElementById('modal05').style.display='block'" class="w3-hover-shadow">
             </div>
             <div class="w3-col s4">
-                <img src="images/image-6.jpg" style="height: 360px; width: 275px; cursor: zoom-in"
+                <img src="images/image-6.jpg" style="width: 95%; cursor: zoom-in"
                     onclick="document.getElementById('modal06').style.display='block'" class="w3-hover-shadow">
             </div>
         </div>
@@ -451,7 +444,7 @@
                 style="cursor: pointer">&times;</span>
             <!-- add modal background image -->
             <div class="my-w3-modal-content w3-animate-zoom">
-                <img src="images/image-1.jpg" style="height: 720px; width: 550px;"/>
+                <img src="images/image-1.jpg" style="width: 80%;"/>
             </div>
         </div>
 
@@ -460,7 +453,7 @@
             <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-display-topright" style="cursor: pointer">&times;</span>
             <!-- add modal background image -->
             <div class="my-w3-modal-content w3-animate-zoom">
-                <img src="images/image-2.jpg" style="height: 720px; width: 550px;" />
+                <img src="images/image-2.jpg" style="width: 80%;" />
             </div>
         </div>
 
@@ -469,7 +462,7 @@
             <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-display-topright" style="cursor: pointer">&times;</span>
             <!-- add modal background image -->
             <div class="my-w3-modal-content w3-animate-zoom">
-                <img src="images/image-3.jpg" style="height: 720px; width: 550px;" />
+                <img src="images/image-3.jpg" style="width: 80%;" />
             </div>
         </div>
 
@@ -478,7 +471,7 @@
             <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-display-topright" style="cursor: pointer">&times;</span>
             <!-- add modal background image -->
             <div class="my-w3-modal-content w3-animate-zoom">
-                <img src="images/image-4.jpg" style="height: 720px; width: 550px;" />
+                <img src="images/image-4.jpg" style="width: 80%;" />
             </div>
         </div>
 
@@ -487,7 +480,7 @@
             <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-display-topright" style="cursor: pointer">&times;</span>
             <!-- add modal background image -->
             <div class="my-w3-modal-content w3-animate-zoom">
-                <img src="images/image-5.jpg" style="height: 720px; width: 550px;" />
+                <img src="images/image-5.jpg" style="width: 80%;" />
             </div>
         </div>
 
@@ -496,7 +489,7 @@
             <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-display-topright" style="cursor: pointer">&times;</span>
             <!-- add modal background image -->
             <div class="my-w3-modal-content w3-animate-zoom">
-                <img src="images/image-6.jpg" style="height: 720px; width: 550px;" />
+                <img src="images/image-6.jpg" style="width: 80%" />
             </div>
         </div>
 
@@ -511,7 +504,7 @@
                 <br>contact@tangerinefarmflowers.com</p>
         </div>
     
-        <div class="w3-third" style="padding-left: 40px;">
+        <div class="w3-third" style="margin-bottom: 20px;">
             <p><a class="footer-link">FAQ</a>
                 <br><a class="footer-link">Privacy policy</a>
                 <br><a class="footer-link">Shipping</a>
@@ -529,6 +522,22 @@
     </footer>
 
     <script>
+         // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function w3_open() {
+                if (mySidebar.style.display === "block") {
+                    mySidebar.style.display = "none";
+                } else {
+                    mySidebar.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+            }
+
         function showDivs(n) {
                 var i;
                 var x = document.getElementsByClassName("mySlides");
@@ -560,15 +569,13 @@
             });
 
             function myAccordion(id) {
-                var x = document.getElementById(id);
-                // if the accordion text is hidden, show it and change the button color to orange
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    // if the accordion text is displayed, hide it and change the button color to brown
-                    x.className = x.className.replace(" w3-show", "");
+                    var x = document.getElementById(id);
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
                 }
-            }
     </script>
 
 </body>
